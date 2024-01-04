@@ -9,7 +9,7 @@ class AnyTextNode_Zho:
     def INPUT_TYPES(cls):
         return {
             "required": {
-                "prompt": ("STRING", {"default": "A cake with colorful characters that reads "EVERYDAY"", "multiline": True}),
+                "prompt": ("STRING", {"default": "A cake with colorful characters that reads \"EVERYDAY\"", "multiline": True}),
                 "mode": (["text-generation", "text-editing"],),  
                 "image_count": ("INT", {"default": 2, "min": 1, "max": 10}),
                 "ddim_steps": ("INT", {"default": 20, "min": 1, "max": 100}),
