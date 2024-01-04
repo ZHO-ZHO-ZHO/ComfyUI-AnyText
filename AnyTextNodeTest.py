@@ -1,3 +1,4 @@
+from .AnyText.cldm.model import create_model, load_state_dict
 from modelscope.pipelines import pipeline
 
 class AnyTextNode_Zho:
