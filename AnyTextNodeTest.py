@@ -11,7 +11,7 @@ class AnyTextNode_Zho:
         return {
             "required": {
                 "prompt": ("STRING", {"default": "A cake with colorful characters that reads \"EVERYDAY\"", "multiline": True}),
-                "mode": ("text-generation",),  
+                "mode": (["text-generation"],),  
                 "image_count": ("INT", {"default": 2, "min": 1, "max": 10}),
                 "ddim_steps": ("INT", {"default": 20, "min": 1, "max": 100}),
                 "show_debug": ("BOOLEAN", {"default": True}),
